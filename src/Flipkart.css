@@ -1,0 +1,99 @@
+:root {
+    --color1: #fff;
+    --color2: #f1f2f4;
+    --color3: #f0f5ff;
+}
+
+body {
+    background-color: var(--color2);
+}
+
+.r1 {
+    background-color: var(--color1);
+
+    padding: 10px 20px;
+    font-size: 24px;
+}
+
+.r1 img {
+    width: 200px;
+    object-fit: contain;
+}
+
+.r1 .c1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.r1 form {
+    display: flex;
+    align-items: center;
+    background-color: var(--color3);
+    padding: 5px 15px;
+    border-radius: 1em;
+    width: 40vw;
+}
+
+.r1 .form-control {
+    background: transparent;
+    border: none;
+    outline: none;
+    box-shadow: unset;
+}
+
+.r1 .c2 {
+    cursor: pointer;
+}
+
+.r1 .c2 span {
+    margin: 0 10px;
+}
+
+.r1 .c3 span,
+.r1 .c4 span {
+    margin-left: 10px;
+}
+
+.r1 .loginbox {
+    background: #fff;
+    position: absolute;
+    border-radius: 1em;
+    box-shadow: 2px 4px 6px #0000003a;
+    top: 70px;
+    transition: all .6s;
+    display: none;
+    font-size: 1em;
+}
+
+.r1 .loginbox div {
+    padding: 10px 20px;
+}
+
+.r1 .loginbox div:hover {
+    background-color: var(--color3);
+}
+
+.r1 .loginbox :nth-child(1) span:nth-child(2) {
+    font-weight: 700;
+    color: #2a55e5;
+}
+
+.r1 .loginbox div:nth-child(1) {
+    border-bottom: 1px solid gray;
+}
+
+.r1 .c2:hover .loginbox {
+    display: unset;
+    transform: translateX(-150px) translateY(-15px);
+}
+
+.r1 .c2:hover .fa-angle-down {
+    transition: all .6s;
+    transform: rotate(-180deg);
+}
+
+.r1 .loginbox:hover {
+    display: unset;
+    transform: translateX(-150px);
+}
